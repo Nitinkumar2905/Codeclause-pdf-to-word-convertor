@@ -1,6 +1,7 @@
-import * as fs from "fs";
+// import * as fs from "fs";
+const fs = require("fs");
+// const wordsApi = new wordsApi("####-####-####-####-####", "##################");
 
-const wordsApi = new WordsApi("####-####-####-####-####", "##################");
 
 const doc = fs.createReadStream("Input.pdf");
 const request = new model.ConvertDocumentRequest({
@@ -13,4 +14,4 @@ const convert = wordsApi.convertDocument(request)
     console.log("Result of ConvertDocument: ", convertDocumentResult);
 });
 
-module.exports = {convertDocument}
+module.exports = {convert}
